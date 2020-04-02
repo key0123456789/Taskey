@@ -30,8 +30,8 @@ main {
 }
 
 .info-line {
-  margin: 20px;
-  font-size: 20px;
+  padding: 14px;
+  font-size: 1em;
 }
 
 .list-index {
@@ -45,10 +45,17 @@ main {
   align-items: flex-start;
   min-width: 320px;
   width: 320px;
+  /* position: relative; */
 }
 
 .text-input {
-  padding: 20px 15px;
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  padding: 20px 40px 20px 15px;
   width: calc(100% - 30px);
   background-color: #ccc;
   border-radius: 8px;
