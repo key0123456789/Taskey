@@ -30,12 +30,18 @@ const store = new Vuex.Store({
   mutations: {
     addList(state, payload) {
       state.lists.push({ title: payload.title, cards:[] })
-    }
+    },
+    removeList(state, payload) {
+      state.lists.splice(payload.listIndex, 1)
+    },
   },
   actions: {
     addList(context, payload) {
       context.commit('addList', payload)
     },
+    removeList(context, payload) {
+      context.commit('removeList', payload)
+    }
   },
   getters: {
   }
